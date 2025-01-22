@@ -85,8 +85,8 @@ window.addEventListener('load', () => {
     initNavigation();
 });
 
-// Обновите URL API на продакшен URL вашего бэкенда
-const API_BASE_URL = 'https://your-backend-url.com';  // Замените на ваш реальный URL бэкенда
+// Заменить все URL с localhost на ваш реальный бэкенд URL
+const API_BASE_URL = 'https://your-backend-url.com';
 
 // Обновим методы в menuHandler
 const menuHandler = {
@@ -202,7 +202,7 @@ app.init = function() {
 // Функция загрузки категорий
 async function loadCategories() {
     try {
-        const response = await fetch('http://localhost:5500/api/categories');
+        const response = await fetch(`${API_BASE_URL}/api/categories`);
         if (!response.ok) {
             throw new Error('Ошибка загрузки категорий');
         }
@@ -221,7 +221,7 @@ function renderCategories(categories) {
     categoriesContainer.innerHTML = categories.map(category => `
         <div class="category-card" data-category-id="${category.id}">
             <div class="category-image">
-                <img src="http://localhost:5500${category.image_url}" 
+                <img src="${API_BASE_URL}${category.image_url}" 
                      alt="${category.name}"
                      onerror="this.src='images/placeholder.png'">
             </div>
@@ -247,7 +247,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Функция загрузки блюд по категории
 async function loadDishesForCategory(categoryId) {
     try {
-        const response = await fetch(`http://localhost:5500/api/categories/${categoryId}/dishes`);
+        const response = await fetch(`${API_BASE_URL}/api/categories/${categoryId}/dishes`);
         if (!response.ok) {
             throw new Error('Ошибка загрузки блюд');
         }
@@ -272,7 +272,7 @@ function renderDishes(dishes) {
             ${dishes.map(dish => `
                 <div class="dish-card">
                     <div class="dish-image">
-                        <img src="http://localhost:5500${dish.image_url}" 
+                        <img src="${API_BASE_URL}${dish.image_url}" 
                              alt="${dish.name}"
                              onerror="this.src='images/placeholder.png'">
                     </div>
@@ -316,7 +316,7 @@ async function showCategories() {
 // Функция загрузки популярных блюд
 async function loadPopularDishes() {
     try {
-        const response = await fetch('http://localhost:5500/api/dishes/popular');
+        const response = await fetch(`${API_BASE_URL}/api/dishes/popular`);
         if (!response.ok) {
             throw new Error('Ошибка загрузки популярных блюд');
         }
@@ -335,7 +335,7 @@ function renderPopularDishes(dishes) {
     popularContainer.innerHTML = dishes.map(dish => `
         <div class="dish-card">
             <div class="dish-image">
-                <img src="http://localhost:5500${dish.image_url}" 
+                <img src="${API_BASE_URL}${dish.image_url}" 
                      alt="${dish.name}"
                      onerror="this.src='images/placeholder.png'">
             </div>
