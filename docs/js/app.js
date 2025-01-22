@@ -85,8 +85,8 @@ window.addEventListener('load', () => {
     initNavigation();
 });
 
-// Добавим константу с базовым URL API
-const API_BASE_URL = 'http://localhost:3000';
+// Обновите URL API на продакшен URL вашего бэкенда
+const API_BASE_URL = 'https://your-backend-url.com';  // Замените на ваш реальный URL бэкенда
 
 // Обновим методы в menuHandler
 const menuHandler = {
