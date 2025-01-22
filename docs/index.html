@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Ресторан Хинкали</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div class="loader">
+        <div class="loader-content">
+            <img src="images/logo.png" alt="Логотип ресторана" class="loader-logo">
+            <p class="loading-text">Загрузка</p>
+        </div>
+        <div class="falling-khinkali">
+            <div class="khinkali-wrapper">
+                <img src="images/khinkali.png" alt="Хинкали" class="khinkali">
+            </div>
+            <div class="khinkali-wrapper">
+                <img src="images/khinkali.png" alt="Хинкали" class="khinkali">
+            </div>
+            <div class="khinkali-wrapper">
+                <img src="images/khinkali.png" alt="Хинкали" class="khinkali">
+            </div>
+            <div class="khinkali-wrapper">
+                <img src="images/khinkali.png" alt="Хинкали" class="khinkali">
+            </div>
+            <div class="khinkali-wrapper">
+                <img src="images/khinkali.png" alt="Хинкали" class="khinkali">
+            </div>
+            <div class="khinkali-wrapper">
+                <img src="images/khinkali.png" alt="Хинкали" class="khinkali">
+            </div>
+            <div class="khinkali-wrapper">
+                <img src="images/khinkali.png" alt="Хинкали" class="khinkali">
+            </div>
+            <div class="khinkali-wrapper">
+                <img src="images/khinkali.png" alt="Хинкали" class="khinkali">
+            </div>
+            <div class="khinkali-wrapper">
+                <img src="images/khinkali.png" alt="Хинкали" class="khinkali">
+            </div>
+            <div class="khinkali-wrapper">
+                <img src="images/khinkali.png" alt="Хинкали" class="khinkali">
+            </div>
+            <div class="khinkali-wrapper">
+                <img src="images/khinkali.png" alt="Хинкали" class="khinkali">
+            </div>
+            <div class="khinkali-wrapper">
+                <img src="images/khinkali.png" alt="Хинкали" class="khinkali">
+            </div>
+            <div class="khinkali-wrapper">
+                <img src="images/khinkali.png" alt="Хинкали" class="khinkali">
+            </div>
+            <div class="khinkali-wrapper">
+                <img src="images/khinkali.png" alt="Хинкали" class="khinkali">
+            </div>
+            <div class="khinkali-wrapper">
+                <img src="images/khinkali.png" alt="Хинкали" class="khinkali">
+            </div>
+            <div class="khinkali-wrapper">
+                <img src="images/khinkali.png" alt="Хинкали" class="khinkali">
+            </div>
+            <div class="khinkali-wrapper">
+                <img src="images/khinkali.png" alt="Хинкали" class="khinkali">
+            </div>
+            <div class="khinkali-wrapper">
+                <img src="images/khinkali.png" alt="Хинкали" class="khinkali">
+            </div>
+            <div class="khinkali-wrapper">
+                <img src="images/khinkali.png" alt="Хинкали" class="khinkali">
+            </div>
+        </div>
+    </div>
+
+    <main class="main-content" id="main-page">
+        <div class="logo">
+            <img src="images/logo.png" alt="Логотип ресторана">
+        </div>
+        <div class="welcome">
+            <h1>Добро пожаловать, <span class="guest-name"></span>!</h1>
+            <p class="welcome-text">
+                Будем рады увидеть вас в нашем ресторане! 
+                Здесь вы можете забронировать стол, оформить самовывоз 
+                с скидкой 10% и многое другое.
+            </p>
+            <div class="action-buttons">
+                <button class="action-button takeaway-btn">
+                    <img src="images/takeaway.png" alt="Заказать на вынос" class="button-icon">
+                    Заказать на вынос
+                </button>
+                <button class="action-button reserve-btn">
+                    <img src="images/reserve.png" alt="Забронировать столик" class="button-icon">
+                    Забронировать столик
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <main class="main-content" id="menu-page" style="display: none;">
+        <div class="menu-header">
+            <img src="images/logo.png" alt="Логотип Баранжар" class="menu-logo">
+            <h1 class="menu-title">Меню</h1>
+        </div>
+
+        <div class="promo-banner">
+            При заказе на вынос действует скидка 10%
+        </div>
+        
+        <div class="menu-section">
+            <div class="section-header">
+                <h2>Категории</h2>
+                <span class="section-arrow">→</span>
+            </div>
+            <div class="categories-grid">
+                <!-- Категории будут добавлены через JavaScript -->
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <div class="section-header">
+                <h2>Праздничные блюда</h2>
+                <span class="section-arrow">→</span>
+            </div>
+            <div class="sets-container">
+                <div class="set-card">
+                    <img src="images/set1.jpg" alt="Сет">
+                    <div class="set-description">
+                        Специальная подборка блюд от нашего шеф-повара сегодня вас удивит в необычном сочетании вкусов и культур
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <div class="section-header">
+                <h2>Популярное</h2>
+                <span class="section-arrow">→</span>
+            </div>
+            <div class="popular-grid">
+                <!-- Популярные блюда будут добавлены через JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <main class="main-content" id="info-page" style="display: none;">
+        <h1>Информация</h1>
+        <!-- Содержимое страницы информации -->
+    </main>
+
+    <nav class="nav-panel">
+        <ul class="nav-list">
+            <li>
+                <a href="#" class="nav-item active" data-page="main-page">
+                    <img src="images/home.png" alt="Главная" class="nav-icon">
+                    <span class="nav-text">Главная</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-item" data-page="menu-page">
+                    <img src="images/menu.png" alt="Меню" class="nav-icon">
+                    <span class="nav-text">Меню</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-item" data-page="info-page">
+                    <img src="images/info.png" alt="Информация" class="nav-icon">
+                    <span class="nav-text">Информация</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <script src="js/app.js"></script>
+</body>
+</html> 
